@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Board</title>
+  </head>
+  <body>
+    <header><%= title %></header>
+    <nav>
+      <a href="/new">Add New Message</a>
+    </nav>
+    <% messages.forEach(message => { %>
+    <p>User: <%= message.user %></p>
+    <p>Date: <%= message.added%></p>
+    <p>Message: <%= message.text %></p>
+    <%})%>
+  </body>
+</html>
