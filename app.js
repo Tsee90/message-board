@@ -5,6 +5,8 @@ const indexRouter = require('./routes/indexRouter');
 const newRouter = require('./routes/newRouter');
 const { body, validationResult } = require('express-validator');
 
+require('dotenv').config();
+
 const populatedb = require('./db/populatedb');
 populatedb.main();
 
