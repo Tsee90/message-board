@@ -5,9 +5,6 @@ const indexRouter = require('./routes/indexRouter');
 const newRouter = require('./routes/newRouter');
 const { body, validationResult } = require('express-validator');
 
-const dbenv = require('./db/dbenv');
-dbenv.init();
-
 const populatedb = require('./db/populatedb');
 populatedb.main();
 

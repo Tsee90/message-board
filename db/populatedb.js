@@ -1,6 +1,4 @@
-const dbenv = require('./dbenv');
 const { Client } = require('pg');
-dbenv.init();
 
 const SQL = `
 CREATE TABLE IF NOT EXISTS messages (
