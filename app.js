@@ -10,3 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/', indexRouter);
 app.use('/new', newRouter);
+
+const PORT = 5432;
+app.listen(PORT, () => {
+  console.log(`Message Board - listening on port ${PORT}!`);
+});
