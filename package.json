@@ -7,6 +7,6 @@
     "pg": "^8.13.1"
   },
   "scripts": {
-    "start": "node app.js --env=production"
+    "start": "DATABASE_URL={{ Postgres.DATABASE_URL }} node app.js --env=production"
   }
 }
