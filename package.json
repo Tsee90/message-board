@@ -7,6 +7,6 @@
     "pg": "^8.13.1"
   },
   "scripts": {
-    "start": "node app.js && node db/populatedb.js"
+    "start": "node app.js --env=production && node db/populatedb.js"
   }
 }
