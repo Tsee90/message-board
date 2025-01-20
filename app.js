@@ -6,7 +6,7 @@ const newRouter = require('./routes/newRouter');
 const { body, validationResult } = require('express-validator');
 
 require('dotenv').config();
-
+console.log(process.env);
 const populatedb = require('./db/populatedb');
 populatedb.main();
 
